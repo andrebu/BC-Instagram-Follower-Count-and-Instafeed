@@ -1,0 +1,8 @@
+<script type="text/javascript">
+// Instagram Count
+var instaurl = '/content/InstagramCount.php';
+$.getJSON(instaurl, function(data){
+    var instacount = data.data.counts.followed_by;
+    $('.instagram a').html(instacount);
+});
+</script>
